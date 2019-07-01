@@ -21,3 +21,22 @@
     @content;
   }
 }
+
+@mixin bg-img($image, $repeat: no-repeat, $position: center, $size: cover){
+    background-image: url($image);
+    background-repeat: $repeat;
+    background-position: $position;
+    background-size: $size;
+}
+
+@mixin flex($justify-content: space-between, $align-items: center){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin size($size){
+    width: $size;
+    height: $size;
+}
+
